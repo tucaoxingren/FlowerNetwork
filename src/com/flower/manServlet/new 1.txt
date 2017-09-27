@@ -1,0 +1,73 @@
+// 1.设置编码方式
+		request.setCharacterEncoding("UTF-8");
+		response.setCharacterEncoding("UTF-8");
+		response.setContentType("type/html;charset=UTF-8");
+
+		// 2.接收参数（从register.jsp中接收数据）
+		Users users = new Users();
+		String usersName = request.getParameter("usersName");// 接收用户名
+		String pwd = request.getParameter("usersPassword");//
+		String repwd = request.getParameter("password_confirm");
+		String phone = request.getParameter("usersPhone");
+		// 判断用户名是否为空
+		if (usersName == null || usersName.equals("")) {
+			request.setAttribute("error", "用户名不可为空");
+			request.getRequestDispatcher("register.jsp").forward(request,response);
+			return;
+		} else {
+			// 判断用户名长度是否符合要求
+			String us = usersName;
+			if ((us.length() < 3 && us.length() >= 1) || us.length() > 15) {
+				request.setAttribute("error", "用户名不符合要求");
+				request.getRequestDispatcher("register.jsp").forward(request,response);
+				return;
+			} else if (nameStr(us)) {// 判断字符是否符合要求
+				request.setAttribute("error", "用户名不符合要求");
+				request.getRequestDispatcher("register.jsp").forward(request,response);
+				return;
+			}
+		}
+		// 判断密码是否为空
+		if (pwd == null || pwd.equals("")) {
+			request.setAttribute("error", "密码不可为空");
+			request.getRequestDispatcher("register.jsp").forward(request,response);
+			return;
+		} else {
+			// 判断密码长度是否符合要求
+			if ((pwd.length() < 6 && pwd.length() >= 1) || pwd.length() > 20) {
+				request.setAttribute("error", "密码不符合要求");
+				request.getRequestDispatcher("register.jsp").forward(request,response);
+				return;
+			}
+		}
+		// 判断确认密码是否一致
+		if (!repwd.equals(pwd)) {
+			request.setAttribute("error", "确认密码不可为空");
+			request.getRequestDispatcher("register.jsp").forward(request,response);
+			return;
+		}
+
+		// 3. 封装参数
+		users.setUsLoginName(usersName);
+		users.setPwd(pwd);
+		users.setPhone(phone);
+
+		// 4. 调dao层
+		UsersDao usersDao = new UsersDao();
+		int row = usersDao.insert(users);
+
+		// 5. 跳转页面
+		if (row > 0) {
+			// 如果大于0，跳转到登陆页面，使用的是转发
+			request.getRequestDispatcher("login.jsp").forward(request, response);
+			// 使用的时重定向
+			// response.sendRedirect("login.jsp");
+		} else if(row == -2){
+			request.setAttribute("error", "用户名已被注册");
+			request.getRequestDispatcher("register.jsp").forward(request,response);
+			
+		}
+		else {
+			request.setAttribute("error", "注册失败");
+			request.getRequestDispatcher("register.jsp").forward(request,response);
+		}

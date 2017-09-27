@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.flower.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UsersLogin</servlet-name>
+    <servlet-class>com.flower.servlet.UsersLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ExitServlet</servlet-name>
+    <servlet-class>com.flower.servlet.ExitServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ListAllServlet</servlet-name>
+    <servlet-class>com.flower.servlet.ListAllServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindAllTypeServlet</servlet-name>
+    <servlet-class>com.flower.servlet.FindAllTypeServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindFlowerByTypeServlet</servlet-name>
+    <servlet-class>com.flower.servlet.FindFlowerByTypeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindFlowerByTypeId</servlet-name>
+    <servlet-class>com.flower.servlet.FindFlowerByTypeId</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SeleteUsers</servlet-name>
+    <servlet-class>com.flower.servlet.SeleteUsers</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddCartServlet</servlet-name>
+    <servlet-class>com.flower.servlet.AddCartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserUpdateServlet</servlet-name>
+    <servlet-class>com.flower.servlet.UserUpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrdersServlet</servlet-name>
+    <servlet-class>com.flower.servlet.OrdersServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SeleteUsersById</servlet-name>
+    <servlet-class>com.flower.servlet.SeleteUsersById</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectUsersToUpdate</servlet-name>
+    <servlet-class>com.flower.servlet.SelectUsersToUpdate</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SettlementServlet</servlet-name>
+    <servlet-class>com.flower.servlet.SettlementServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdatePwdServlet</servlet-name>
+    <servlet-class>com.flower.servlet.UpdatePwdServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectOrdersByUsers</servlet-name>
+    <servlet-class>com.flower.servlet.SelectOrdersByUsers</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectByOrdersNo</servlet-name>
+    <servlet-class>com.flower.servlet.SelectByOrdersNo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchServlet</servlet-name>
+    <servlet-class>com.flower.servlet.SearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ManLoginServlet</servlet-name>
+    <servlet-class>com.flower.servlet.ManLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddCollectionServlet</servlet-name>
+    <servlet-class>com.flower.servlet.AddCollectionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetCollServlet</servlet-name>
+    <servlet-class>com.flower.servlet.GetCollServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindAllServlet</servlet-name>
+    <servlet-class>com.flower.manServlet.FindAllServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindType</servlet-name>
+    <servlet-class>com.flower.manServlet.FindType</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindAllGood</servlet-name>
+    <servlet-class>com.flower.manServlet.FindAllGood</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindAllUsers</servlet-name>
+    <servlet-class>com.flower.manServlet.FindAllUsers</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindAllOrder</servlet-name>
+    <servlet-class>com.flower.manServlet.FindAllOrder</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ExitMan</servlet-name>
+    <servlet-class>com.flower.manServlet.ExitMan</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateManPwd</servlet-name>
+    <servlet-class>com.flower.manServlet.UpdateManPwd</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddTypeServlet</servlet-name>
+    <servlet-class>com.flower.manServlet.AddTypeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateTypeServlet</servlet-name>
+    <servlet-class>com.flower.manServlet.UpdateTypeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteTypeServlet</servlet-name>
+    <servlet-class>com.flower.manServlet.DeleteTypeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindGood</servlet-name>
+    <servlet-class>com.flower.manServlet.FindGood</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddGoodsServlet</servlet-name>
+    <servlet-class>com.flower.manServlet.AddGoodsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindOrder</servlet-name>
+    <servlet-class>com.flower.manServlet.FindOrder</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderInfoServlet</servlet-name>
+    <servlet-class>com.flower.manServlet.OrderInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindTypeForAddGoods</servlet-name>
+    <servlet-class>com.flower.manServlet.FindTypeForAddGoods</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteFlowerServlet</servlet-name>
+    <servlet-class>com.flower.manServlet.DeleteFlowerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ManUploadServlet</servlet-name>
+    <servlet-class>com.flower.manServlet.ManUploadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateFlower</servlet-name>
+    <servlet-class>com.flower.manServlet.UpdateFlower</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateFlowerPre</servlet-name>
+    <servlet-class>com.flower.manServlet.UpdateFlowerPre</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateFlowerUpload</servlet-name>
+    <servlet-class>com.flower.manServlet.UpdateFlowerUpload</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindUsers</servlet-name>
+    <servlet-class>com.flower.manServlet.FindUsers</servlet-class>
+  </servlet>
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UsersLogin</servlet-name>
+    <url-pattern>/UsersLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExitServlet</servlet-name>
+    <url-pattern>/ExitServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ListAllServlet</servlet-name>
+    <url-pattern>/ListAllServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindAllTypeServlet</servlet-name>
+    <url-pattern>/FindAllTypeServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>FindFlowerByTypeServlet</servlet-name>
+    <url-pattern>/FindFlowerByTypeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindFlowerByTypeId</servlet-name>
+    <url-pattern>/FindFlowerByTypeId</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SeleteUsers</servlet-name>
+    <url-pattern>/SeleteUsers</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddCartServlet</servlet-name>
+    <url-pattern>/AddCartServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserUpdateServlet</servlet-name>
+    <url-pattern>/UserUpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrdersServlet</servlet-name>
+    <url-pattern>/OrdersServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SeleteUsersById</servlet-name>
+    <url-pattern>/SeleteUsersById</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectUsersToUpdate</servlet-name>
+    <url-pattern>/SelectUsersToUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SettlementServlet</servlet-name>
+    <url-pattern>/SettlementServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdatePwdServlet</servlet-name>
+    <url-pattern>/UpdatePwdServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectOrdersByUsers</servlet-name>
+    <url-pattern>/SelectOrdersByUsers</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectByOrdersNo</servlet-name>
+    <url-pattern>/SelectByOrdersNo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchServlet</servlet-name>
+    <url-pattern>/SearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ManLoginServlet</servlet-name>
+    <url-pattern>/ManLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddCollectionServlet</servlet-name>
+    <url-pattern>/AddCollectionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetCollServlet</servlet-name>
+    <url-pattern>/GetCollServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindAllServlet</servlet-name>
+    <url-pattern>/FindAllServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindType</servlet-name>
+    <url-pattern>/FindType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindAllGood</servlet-name>
+    <url-pattern>/FindAllGood</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindAllUsers</servlet-name>
+    <url-pattern>/FindAllUsers</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindAllOrder</servlet-name>
+    <url-pattern>/FindAllOrder</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExitMan</servlet-name>
+    <url-pattern>/ExitMan</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateManPwd</servlet-name>
+    <url-pattern>/UpdateManPwd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddTypeServlet</servlet-name>
+    <url-pattern>/AddTypeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateTypeServlet</servlet-name>
+    <url-pattern>/UpdateTypeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteTypeServlet</servlet-name>
+    <url-pattern>/DeleteTypeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindGood</servlet-name>
+    <url-pattern>/FindGood</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddGoodsServlet</servlet-name>
+    <url-pattern>/AddGoodsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindOrder</servlet-name>
+    <url-pattern>/FindOrder</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderInfoServlet</servlet-name>
+    <url-pattern>/OrderInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindTypeForAddGoods</servlet-name>
+    <url-pattern>/FindTypeForAddGoods</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteFlowerServlet</servlet-name>
+    <url-pattern>/DeleteFlowerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ManUploadServlet</servlet-name>
+    <url-pattern>/ManUploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateFlower</servlet-name>
+    <url-pattern>/UpdateFlower</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateFlowerPre</servlet-name>
+    <url-pattern>/UpdateFlowerPre</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateFlowerUpload</servlet-name>
+    <url-pattern>/UpdateFlowerUpload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindUsers</servlet-name>
+    <url-pattern>/FindUsers</url-pattern>
+  </servlet-mapping>
+
+
+  <welcome-file-list> 
+  	<welcome-file>FindAllTypeServlet</welcome-file>
+  </welcome-file-list>
+
+</web-app>

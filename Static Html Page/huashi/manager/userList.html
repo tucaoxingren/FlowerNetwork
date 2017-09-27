@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>『花市网』用户列表页</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script type="text/javascript" src="js/libs/modernizr.min.js"></script>
+    
+    <script type="text/javascript">
+    	function htmlChange(nu){
+			
+			var frame=document.getElementById("frame");
+			if(nu==0){
+				frame.setAttribute("src","glylb.html");
+			}else if(nu==1){
+				frame.setAttribute("src","xggly.html");
+			}else if(nu==2){
+				frame.setAttribute("src","glylb.html");
+			}else if(nu==3){
+				frame.setAttribute("src","yhlb.html");
+			}else if(nu==4){
+				frame.setAttribute("src","mjlb.html");
+			}else if(nu==5){
+				frame.setAttribute("src","pllb.html");
+			}
+			
+		}
+    </script>
+    
+</head>
+<body>
+
+<div class="containers">
+
+    <div class="topbar-wrap">
+        <div class="topbar-inner">
+        
+        
+            <div class="topbar-logo-wrap clearfix">
+               
+                <ul class="navbar-list clearfix">
+                    <li><a  class="on" href="index.html">花市网后台管理系统</a></li>
+                       
+                    
+                </ul>
+                
+            </div>
+            
+            
+            <div style="float:left"><marquee >管理员admin欢迎你！</marquee></div>
+            
+            
+            <div class="top-info-wrap">
+                <ul class="top-info-list clearfix">
+                  
+                    <li><a href="mnPwd.html" onClick="htmlChange(1)">修改密码</a></li>
+                    <li><a href="login.html">退出</a></li>
+                </ul>
+            </div>
+            
+            
+        </div>
+    </div>
+
+
+
+    <div class="xia">
+    
+        <div class="container clearfix">
+            <div class="sidebar-wrap">
+                <div class="sidebar-title">
+                    <h1>菜单</h1>
+                </div>
+                <div class="sidebar-content">
+                    <ul class="sidebar-list">
+                        <li>
+                            <a href="typeList.html" style="margin-left:20px;">类型管理</a>
+                            <ul class="sub-menu">
+                                <li onClick="htmlChange(2)"><a href="goodsList.html">商品管理</a></li>
+                                <li onClick="htmlChange(3)"><a href="userList.html">用户管理</a></li>
+                                <li onClick="htmlChange(4)"><a href="orderList.html">订单管理</a></li>
+                               
+                            </ul>
+                        </li>
+                        <li>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+           
+        </div>
+        
+         <div class="sidebar-right">
+         	        <div class="result-wrap">
+            <form  name="myform" id="myform" method="post">
+                <div class="result-title">
+                    <div class="result-list">
+                        <a href="../manager1/insert.html"></a>
+                        <a id="batchDel" href="javascript:void(0)"></a>
+                        
+                    </div>
+                </div>
+                <div class="result-content">
+                    <table class="result-tab" width="1120px">
+                        <tr>
+                           
+                           
+		                    <th style="text-align:center;">用户名</th>
+                            
+                            <th style="text-align:center;">昵称</th>
+                            <th style="text-align:center;">电话</th>
+                            <th style="text-align:center;">邮箱</th>
+                           
+                             
+                            
+                           
+                        </tr>
+                        <tr align="center">
+                           
+                           
+                            <td>zs001</td>
+                           <td>张三</td>
+                            <td>13888888888</td>
+                            <td>123456@qq.com</td>
+                            
+                          
+                           
+                            
+                        </tr>
+                        
+                       
+                    </table>
+                    <div class="list-page"> 1/1 页</div>
+                </div>
+            </form>
+        </div>
+
+         </div>
+
+    </div>
+    
+    <div class="footer">@copyright</div>
+    
+    
+</div>
+</body>
+</html>

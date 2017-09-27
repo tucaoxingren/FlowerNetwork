@@ -1,0 +1,230 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+
+<html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>花市网 - 用户注册</title>
+<meta name="keywords" content="花市网">
+<meta name="description" content="花市网">
+<style type="text/css">
+
+</style>
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/home_header.css" rel="stylesheet" type="text/css">
+<link href="css/member_login.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.min.css" rel="stylesheet"><!-- .jsp -->
+
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.validation.min.js"></script>
+<script src="js/taglibs.js"></script>
+<script src="js/jquery-1.8.1.min.js"></script>
+<script src="js/login.js"></script>
+<script src="js/tabulous.js"></script>
+</head>
+<body>
+<div class="header-wrap">
+  <header class="public-head-layout wrapper">
+    <h1 class="site-logo"><a href="<c:url value="FindAllTypeServlet"/>"><img src="image/05166631110429063.jpg" class="pngFix"></a></h1>
+            <div class="nc-login-now">我已经注册，现在就<a href="login.jsp" title="" class="register">登录</a></div>
+          </header>
+</div>
+
+
+<div class="nc-register-bg">
+  <div class="nc-register-box">
+    <div class="nc-register-layout">
+      <div class="left">
+        <div class="nc-register-mode">
+          <ul class="tabs-nav">
+            <li><a href="#" class="tabulous_active">账号注册<i></i></a></li>
+                        
+          </ul>
+          <div id="tabs_container" class="tabs-container" style="height: 383px;">
+            <div id="default" class="tabs-content" style="position: absolute; top: 0px;">
+              <form  id="login_form" class="nc-login-form" method="post" action="<c:url value="RegisterServlet"/>">
+                <input type="hidden" name="formhash" value="i74gxzF9Kv5aNypgG2qJK7jLEAdylJE"> <!-- qDCo6d0k-EzmqCqNquKnrT5K0l598fN -->
+                <input type="hidden" name="form_submit" value="ok">
+                <input name="nchash" type="hidden" value="cbcda2fa"> <!-- cbcda2fa -->
+                <dl>
+                  <dt>用户名：</dt>
+                  <dd>
+                    <input type="text" class="text" autocomplete="off" name="usersName" placeholder="请使用3-15个中、英文、数字及“-”符号"  id="uname" style="color: rgb(187, 187, 187);">
+                  </dd>
+                </dl>
+                <div id="a1" style="width:220px; display:none; height:35px; border:solid 1px #FF9900; position:absolute; background-color:#fff; font-size:13px; line-height:35px; color:#FF9900; z-index:3; margin-left:260px; margin-top:-45px; padding-left:15px;"></div>
+                
+                <dl>
+                  <dt>设置密码：</dt>
+                  <dd>
+                    <input type="password" id="uspwd" name="usersPassword" class="text" placeholder="6-20个大小写英文字母、符号或数字"  style="color: rgb(187, 187, 187);">
+                  </dd>
+                </dl>
+                <div id="a2" style="width:220px; display:none; height:35px; border:solid 1px #FF9900; position:absolute; background-color:#fff; font-size:13px; line-height:35px; color:#FF9900; z-index:3; margin-left:260px; margin-top:-45px; padding-left:15px;"></div>
+                
+                <dl>
+                  <dt>确认密码：</dt>
+                  <dd>
+                    <input type="password" id="uspwdOk" name="password_confirm" class="text" placeholder="请再次输入密码" style="color: rgb(187, 187, 187);">
+                  </dd>
+                </dl>
+                <div id="a3" style="width:220px; display:none; height:35px; border:solid 1px #FF9900; position:absolute; background-color:#fff; font-size:13px; line-height:35px; color:#FF9900; z-index:3; margin-left:260px; margin-top:-45px; padding-left:15px;"></div>
+                <dl>
+                  <dt>电话号码：</dt>
+                  <dd>
+                    <input type="text" id="uphone"  name="usersPhone" class="text" placeholder="请输入你的电话号码" style="color: rgb(187, 187, 187);">
+                  </dd>
+                </dl>
+                <div id="a4" style="width:220px; display:none; height:35px; border:solid 1px #FF9900; position:absolute; background-color:#fff; font-size:13px; line-height:35px; color:#FF9900; z-index:3; margin-left:260px; margin-top:-45px; padding-left:15px;"></div>
+                
+                
+                                <dl class="clause-div">
+                  <dd>
+                    <input name="agree" type="checkbox" class="checkbox" id="clause" value="1" checked="checked">
+                      阅读并同意<a href="#" target="_blank" class="agreement" title="阅读并同意">《服务协议》</a></dd>
+                </dl>
+                
+                <div class="submit-div">
+               
+                 <input type="submit" id="Submit" value="立即注册" class="submit"/>
+                </div>
+                
+              </form>
+            </div>
+            
+                      </div>
+        </div>
+      </div>
+      <div class="right">
+          <div class="api-login">
+          			<h4>使用合作网站账号直接登录</h4>
+                    <a href="#" title="QQ账号登录" class="qq"><i></i></a>
+                    <a href="#" title="新浪微博" class="sina"><i></i></a>
+                    <a href="#" title="微信账号登录" class="wx"><i></i></a>
+                  </div>
+          <div class="reister-after">
+                  <h4>注册之后您可以</h4>
+                  <ol>
+                    <li class="ico01"><i></i>购买商品支付订单</li>
+                    <li class="ico02"><i></i>收藏商品关注店铺</li>
+                    <li class="ico03"><i></i>安全交易诚信无忧</li>
+                    <li class="ico04"><i></i>积分获取优惠购物</li>
+                    <li class="ico05"><i></i>会员等级享受特权</li>
+                    <li class="ico06"><i></i>评价晒单站外分享</li>
+                  </ol>
+        		</div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+$(function(){
+	//初始化Input的灰色提示信息  
+	$('input[tipMsg]').inputTipText({pwd:'password,password_confirm'});
+	//注册方式切换
+	$('.nc-register-mode').tabulous({
+		 //动画缩放渐变效果effect: 'scale'
+		 effect: 'slideLeft'//动画左侧滑入效果
+		//动画下方滑入效果 effect: 'scaleUp'
+		//动画反转效果 effect: 'flip'
+	});
+	var div_form = '#default';
+	$(".nc-register-mode .tabs-nav li a").click(function(){
+        if($(this).attr("href") !== div_form){
+            div_form = $(this).attr('href');
+            $(""+div_form).find(".makecode").trigger("click");
+    	}
+	});
+	
+	
+//注册表单验证
+    $("#register_form").validate({
+        errorPlacement: function(error, element){
+            var error_td = element.parent('dd');
+            error_td.append(error);
+            element.parents('dl:first').addClass('error');
+        },
+        success: function(label) {
+            label.parents('dl:first').removeClass('error').find('label').remove();
+        },
+    	submitHandler:function(form){
+    	    ajaxpost('register_form', '', '', 'onerror');
+    	},
+        onkeyup: false,
+        rules : {
+           
+            password : {
+                required : true,
+                minlength: 6,
+				maxlength: 20
+            },
+            password_confirm : {
+                required : true,
+                equalTo  : '#password'
+            },
+           
+			            captcha : {
+                required : true,
+                remote   : {
+                    url : 'index.php?act=seccode&op=check&nchash=9cb2e6ef',
+                    type: 'get',
+                    data:{
+                        captcha : function(){
+                            return $('#captcha').val();
+                        }
+                    },
+                    complete: function(data) {
+                        if(data.responseText == 'false') {
+                        	document.getElementById('codeimage').src='index.php?act=seccode&op=makecode&type=50,120&nchash=9cb2e6ef&t=' + Math.random();
+                        }
+                    }
+                }
+            },
+			            agree : {
+                required : true
+            }
+        },
+        messages : {
+           
+            password  : {
+                required : '<i class="icon-exclamation-sign"></i>密码不能为空',
+                minlength: '<i class="icon-exclamation-sign"></i>密码长度应在6-20个字符之间',
+				maxlength: '<i class="icon-exclamation-sign"></i>密码长度应在6-20个字符之间'
+            },
+            password_confirm : {
+                required : '<i class="icon-exclamation-sign"></i>请再次输入密码',
+                equalTo  : '<i class="icon-exclamation-sign"></i>两次输入的密码不一致'
+            },
+           
+			           
+			            agree : {
+                required : '<i class="icon-exclamation-sign"></i>请勾选服务协议'
+            }
+        }
+    });
+});
+</script>
+ 
+
+<div id="footer" class="wrapper">
+ 
+    <p><a href="<c:url value="FindAllTypeServlet"/>">首页</a>
+        | <a href="#">购物指南</a>
+        | <a href="#">支付方式</a>
+        | <a href="#">配送方式</a>
+        | <a href="#">售后服务</a>
+        | <a href="#">相关知识</a>
+        | <a href="#">帮助中心</a>
+    </p>
+        Copyright 2017 Copyright© 2005-2017 中网慧谷网络科技（北京）有限公司 版权所有，并保留所有权利。 All rights reserved
+              <br>
+</div>
+	<c:if test="${error!=null }">
+		<script type="text/javascript">
+			alert("${error}");
+		</script>
+	</c:if>	
+
+</body>
+</html>

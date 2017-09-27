@@ -1,0 +1,121 @@
+package com.flower.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.flower.dao.UsersDao;
+import com.flower.entity.Users;
+
+/**
+ * 查询个人信息
+ * 
+ * @author admin
+ * 
+ */
+public class SeleteUsersById extends HttpServlet {
+
+	/**
+	 * Constructor of the object.
+	 */
+	public SeleteUsersById() {
+		super();
+	}
+
+	/**
+	 * Destruction of the servlet. <br>
+	 */
+	public void destroy() {
+		super.destroy(); // Just puts "destroy" string in log
+		// Put your code here
+	}
+
+	/**
+	 * The doGet method of the servlet. <br>
+	 * 
+	 * This method is called when a form has its tag value method equals to get.
+	 * 
+	 * @param request
+	 *            the request send by the client to the server
+	 * @param response
+	 *            the response send by the server to the client
+	 * @throws ServletException
+	 *             if an error occurred
+	 * @throws IOException
+	 *             if an error occurred
+	 */
+	public void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+		doPost(request, response);
+	}
+
+	/**
+	 * The doPost method of the servlet. <br>
+	 * 
+	 * This method is called when a form has its tag value method equals to
+	 * post.
+	 * 
+	 * @param request
+	 *            the request send by the client to the server
+	 * @param response
+	 *            the response send by the server to the client
+	 * @throws ServletException
+	 *             if an error occurred
+	 * @throws IOException
+	 *             if an error occurred
+	 */
+	public void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+		// 1.设置编码方式
+		request.setCharacterEncoding("UTF-8");
+		response.setCharacterEncoding("UTF-8");
+		response.setContentType("type/html;charset=UTF-8");
+		PrintWriter out = response.getWriter();
+
+		// 2.接收参数
+		Users temp = (Users) request.getSession().getAttribute("loginUser");
+		//String usersName = temp.getUsLoginName();// 接收用户名
+		if(temp != null){
+			request.getRequestDispatcher("userInfo.jsp").forward(request, response);
+		}else{
+			request.getRequestDispatcher("login.jsp").forward(request, response);
+		}
+
+		/*
+		String pwd = request.getParameter("newPwd");
+		String phone = request.getParameter("newPhone");
+		String email = request.getParameter("newEmail");
+		String nike = request.getParameter("newNike");
+
+		// 3.封装参数
+		Users newUsers = new Users();
+		newUsers.setUsLoginName(usersName);
+		newUsers.setPwd(pwd);
+		newUsers.setPhone(phone);
+		newUsers.setEmail(email);
+		newUsers.setNickName(nike);
+
+		UsersDao usersDao = new UsersDao();
+		int row = usersDao.update(newUsers);*/
+
+		out.flush();
+		out.close();
+	}
+
+	/**
+	 * Initialization of the servlet. <br>
+	 * 
+	 * @throws ServletException
+	 *             if an error occurs
+	 */
+	public void init() throws ServletException {
+		// Put your code here
+	}
+
+}

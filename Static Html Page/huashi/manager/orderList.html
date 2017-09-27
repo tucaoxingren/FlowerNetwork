@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>『花市网』订单列表页</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script type="text/javascript" src="js/libs/modernizr.min.js"></script>
+    
+    <script type="text/javascript">
+    	function htmlChange(nu){
+			
+			var frame=document.getElementById("frame");
+			if(nu==0){
+				frame.setAttribute("src","glylb.html");
+			}else if(nu==1){
+				frame.setAttribute("src","xggly.html");
+			}else if(nu==2){
+				frame.setAttribute("src","glylb.html");
+			}else if(nu==3){
+				frame.setAttribute("src","yhlb.html");
+			}else if(nu==4){
+				frame.setAttribute("src","mjlb.html");
+			}else if(nu==5){
+				frame.setAttribute("src","pllb.html");
+			}
+			
+		}
+    </script>
+    
+</head>
+<body>
+
+<div class="containers">
+
+    <div class="topbar-wrap">
+        <div class="topbar-inner">
+        
+        
+            <div class="topbar-logo-wrap clearfix">
+               
+                <ul class="navbar-list clearfix">
+                    <li><a  class="on" href="index.html">花市网后台管理系统</a></li>
+                       
+                    
+                </ul>
+                
+            </div>
+            
+            
+            <div style="float:left"><marquee >管理员admin欢迎你！</marquee></div>
+            
+            
+            <div class="top-info-wrap">
+                <ul class="top-info-list clearfix">
+                  
+                    <li><a href="mnPwd.html" onClick="htmlChange(1)">修改密码</a></li>
+                    <li><a href="login.html">退出</a></li>
+                </ul>
+            </div>
+            
+            
+        </div>
+    </div>
+
+
+
+    <div class="xia">
+    
+        <div class="container clearfix">
+            <div class="sidebar-wrap">
+                <div class="sidebar-title">
+                    <h1>菜单</h1>
+                </div>
+                <div class="sidebar-content">
+                    <ul class="sidebar-list">
+                        <li>
+                            <a href="typeList.html" style="margin-left:20px;">类型管理</a>
+                            <ul class="sub-menu">
+                                <li onClick="htmlChange(2)"><a href="goodsList.html">商品管理</a></li>
+                                <li onClick="htmlChange(3)"><a href="userList.html">用户管理</a></li>
+                                <li onClick="htmlChange(4)"><a href="orderList.html">订单管理</a></li>
+                               
+                            </ul>
+                        </li>
+                        <li>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+           
+        </div>
+        
+         <div class="sidebar-right">
+         
+        <div class="search-content">
+                <form action="#" method="post">
+                    <table class="search-tab">
+                        <tr>
+                            
+                            <th width="70">关键字:</th>
+                            <td><input class="common-text" placeholder="关键字" name="keywords" value="" id="" type="text"></td>
+                            <td><input style="background-color:#F9A2B5; border:0; border-radius:5px; width:60px; color:#FFF; cursor:pointer; font-family:'Microsoft YaHei UI';font-size:16px;" name="sub" value="查询" type="submit"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        
+       
+        <div class="search-wrap">
+            <div class="search-content">
+               
+            </div>
+        </div>
+        
+        
+        <div class="result-wrap">
+            <form name="myform" id="myform" method="post">
+                <div class="result-title">
+                    <div class="result-list">
+                        <a href="../manager1/insert.html"></a>
+                        <a id="batchDel" href="javascript:void(0)"></a>
+                        
+                    </div>
+                </div>
+                <div class="result-content" style="margin-top:-50px;">
+                    <table class="result-tab" width="1120px">
+                        <tr>
+                           <th  style="text-align:center;">订单编号</th>
+                            <th  style="text-align:center;">下单用户</th>
+                            <th style="text-align:center;">下单时间</th>
+                            <th style="text-align:center;">收货人</th>
+                            <th style="text-align:center;">发货地址</th>
+                            <th style="text-align:center;">收件人联系电话</th>
+                            <th style="text-align:center;">订单总价</th>
+                             
+                            <th  style=" text-align:center;">操作</th>
+                           
+                           
+                        </tr>
+                        <tr align="center">
+                           
+                            <td>59</td>
+                            <td>发哥经典</td>
+                            <td>2017-06-15</td>
+                           <td>张三</td>
+                              <td>五华区学府路8号</td>
+                               <td>13888888888</td>
+                              <td>111</td>
+                            <td><a target="_blank" href="orderInfo.html" >订单详情</a> </td>
+                          
+                            
+                           
+                        </tr>
+                       
+                    </table>
+                    <div class="list-page"> 1/1 页</div>
+                </div>
+            </form>
+        </div>
+
+         </div>
+
+    </div>
+    
+    <div class="footer">@copyright</div>
+    
+    
+</div>
+</body>
+</html>

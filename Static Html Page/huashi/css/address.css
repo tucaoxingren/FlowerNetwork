@@ -1,0 +1,15 @@
+/* CSS Document */
+/*新增地址*/
+.xian1{ width:480px; height:30px; float:left; background-color:#CCC;}
+.xian1_1{ width:240px; height:30px; float:left; line-height:35px; background-color:#fFF;}
+.xian1_2{ width:240px; height:30px; float:left; line-height:35px; background-color:#fFF;}
+.xian1_2 em{ font:18px "黑体"; float:right; margin-top:5px; margin-right:5px; cursor:pointer; background-color:#fff; }
+.xian1_2 em:hover{color:#F00;}
+.xianform1{ width:480px; height:30px; float:left; margin-top:10px; background-color:#FFF;}
+.xianform1 div{ float:left; margin-top:5px; margin-left:50px;}
+.xianform1 input{ float:left; margin-top:3px; margin-left:30px; width:200px; height:15px;}
+.xianform2{ width:480px; height:30px; float:left; margin-top:10px; background-color:#FFF;}
+.xianform2 input{ float:left; width:150px; margin-top:5px; margin-left:100px; height:20px; background-color:#5BB75B;}
+.topOne3zhong2suo input{ width:68px; height:40px; font-size:15px; color:#FFF; text-align:center;
+ line-height:40px;cursor:pointer; background-color:#F32613; font-weight:900; float:left; margin-left:-1px;}
+

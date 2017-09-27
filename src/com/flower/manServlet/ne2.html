@@ -1,0 +1,45 @@
+<form action="<c:url value="SelectUsersToUpdate"/>" method="post" id="myform" name="myform">
+	<table class="insert-tab" width="100%">
+		<tbody><tr>
+		</tr>
+			<tr>
+				<th>用户名：</th>
+				<td >${loginUser.usLoginName}</td>
+			</tr>
+			<tr>
+				<th>昵&nbsp;&nbsp;&nbsp;&nbsp;称：</th>
+				<c:if test="${loginUser.nickName == null}">
+					<td>您还没有设置昵称！</td> 
+				</c:if >
+				<c:if test="${loginUser.nickName != null}">
+					<td>${loginUser.nickName}</td> 
+				</c:if > 	
+			</tr>
+			<tr>
+				<th>电&nbsp;&nbsp;&nbsp;&nbsp;话：</th>
+				<c:if test="${loginUser.phone == null}">
+					<td>您还没有设置电话号码！</td> 
+				</c:if >
+				<c:if test="${loginUser.phone != null}">
+					<td>${loginUser.phone}</td> 
+				</c:if >                                
+			</tr>
+			<tr>
+				<th>邮&nbsp;&nbsp;&nbsp;&nbsp;箱：</th>
+				<c:if test="${loginUser.email == null}">
+					<td>您还没有设置电子邮箱！</td> 
+				</c:if >
+				<c:if test="${loginUser.email != null}">
+					<td>${loginUser.email}</td> 
+				</c:if >                               
+			</tr>	   
+			<tr>
+				
+				<td style="float:right;border:none;margin-right:-140px;">
+				<!-- <c:url value="SelectUsersToUpdate"/> -->
+				   <a href="<c:url value="SelectUsersToUpdate"/>"> <input class="btn btn-primary btn6 mr10" value="修改" type="submit"/></a>
+				
+				</td>
+			</tr>			
+		</tbody></table>
+</form>

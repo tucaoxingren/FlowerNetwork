@@ -1,0 +1,31 @@
+前台页面：
+index.html               首页
+listAll.html             商品列表页
+detail.html              商品详情页
+busOrder.html            购物车页
+register.html            注册页面
+login.html               登录页 
+checkOrder.html          订单填写页
+okOrder.html             订单生成页
+orderLists.html          订单列表页
+orderInfo.html           订单详情页
+userInfo.html            用户信息页
+userInfoUpdate.html      用户信息修改页
+userPwd.html             用户密码修改页
+
+后台页面：
+manager/login.html        后台登录页
+manager/index.html        后台首页
+manager/mnPwd.html        管理员密码修改页
+manager/typeList.html     商品类型列表页
+manager/addType.html      增加商品类型页
+manager/updateType.html   修改商品类型页
+manager/goodsList.html    后台商品列表页
+manager/addGoods.html     增加商品页
+manager/updateGoods.html  修改商品信息页
+manager/userList.html     用户列表页
+manager/orderList.html    订单列表页
+manager/orderInfo.html    订单详情页
+
+
+
